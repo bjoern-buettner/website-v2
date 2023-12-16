@@ -6,7 +6,7 @@
                 <nav class="w-full bg-white border-gray-200">
                     <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4 w-full">
                         <Link :href="route('app.home')" class="flex items-center space-x-3">
-                            <img src="../../assets/img/logo.png" alt="Bjoern-Buettner.me Logo">
+                            <img src="/public/resources/assets/img/logo.png" alt="Bjoern-Buettner.me Logo">
                         </Link>
                         <!-- menu toggles -->
                         <div class="flex items-center lg:order-2 space-x-1 lg:space-x-2">
@@ -249,5 +249,4 @@
 
 <script setup>
 import {Link} from '@inertiajs/vue3';
-console.debug(route('app.home'));
 </script>
