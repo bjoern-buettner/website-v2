@@ -1,13 +1,19 @@
-import { defineConfig } from 'vite';
+import {defineConfig} from 'vite';
 import laravel from 'laravel-vite-plugin';
-import vuePlugin from "@vitejs/plugin-vue";
+import vuePlugin from '@vitejs/plugin-vue';
+import path from 'path';
 
 export default defineConfig({
-    plugins: [
-        laravel({
-            input: ['resources/css/app.css', 'resources/js/app.js'],
-            refresh: true,
-        }),
-        vuePlugin()
-    ]
+  plugins: [
+    laravel({
+      input: ['resources/css/app.css', 'resources/js/app.js'],
+      refresh: true,
+    }),
+    vuePlugin(),
+  ],
+  resolve: {
+    alias: {
+      ziggy: path.resolve('vendor/tightenco/ziggy/dist/vue.es.js'),
+    },
+  },
 });

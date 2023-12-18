@@ -5,9 +5,9 @@
             <header class="h-full max-w-screen-xl mx-auto flex flex-row">
                 <nav class="w-full bg-white border-gray-200">
                     <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4 w-full">
-                        <a href="https://flowbite.com" class="flex items-center space-x-3">
+                        <Link :href="route('app.home')" class="flex items-center space-x-3">
                             <img src="../../assets/img/logo.png" alt="Bjoern-Buettner.me Logo">
-                        </a>
+                        </Link>
                         <!-- menu toggles -->
                         <div class="flex items-center lg:order-2 space-x-1 lg:space-x-2">
                             <button data-collapse-toggle="main-menu" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-gray-500 rounded-lg lg:hidden hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-gray-200" aria-controls="menu" aria-expanded="false">
@@ -25,7 +25,7 @@
                         <div id="main-menu" class="items-center justify-between hidden w-full lg:flex lg:w-auto lg:order-1">
                             <ul class="flex flex-col mt-4 font-medium lg:flex-row lg:mt-0 lg:space-x-8">
                                 <li>
-                                    <Link href="#" class="block py-2 px-3 border-b border-gray-100 hover:bg-green-50 active:bg-green-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0" aria-current="page">Home</Link>
+                                    <Link :href="route('app.home')" class="block py-2 px-3 border-b border-gray-100 hover:bg-green-50 active:bg-green-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0" aria-current="page">Home</Link>
                                 </li>
                                 <li>
                                     <button id="dropdown-button-services" data-dropdown-toggle="dropdown-services" class="flex items-center justify-between w-full py-2 px-3 font-medium text-gray-900 border-b border-gray-100 lg:w-auto hover:bg-green-50 active:bg-green-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0">
@@ -249,5 +249,5 @@
 
 <script setup>
 import {Link} from '@inertiajs/vue3';
-
+console.debug(route('app.home'));
 </script>
