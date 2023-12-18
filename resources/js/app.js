@@ -3,6 +3,10 @@ import {createInertiaApp} from '@inertiajs/vue3';
 import {ZiggyVue} from 'ziggy';
 import AppLayout from '@/Layouts/AppLayout.vue';
 
+import '../css/app.css';
+import '../../node_modules/flowbite/dist/flowbite.min.css';
+import '../../node_modules/flowbite/dist/flowbite.min.js';
+
 createInertiaApp({
   resolve: (name) => {
     const pages = import.meta.glob('./Pages/**/*.vue', {eager: true});
