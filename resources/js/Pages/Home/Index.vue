@@ -3,33 +3,25 @@
     <section class="bg-white dark:bg-gray-900">
         <div class="py-8 px-4 mx-auto max-w-screen-xl text-center lg:py-16">
             <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-gray-900 md:text-5xl lg:text-6xl dark:text-white">
-                Willkommen bei uns!
+                {{ $t('home.headline') }}
             </h1>
             <p class="mb-4 text-sm font-normal text-gray-500 lg:text-base sm:px-16 lg:px-48 dark:text-gray-400">
-                Wir sind ein kleines Unternehmen, welches sich auf hochwertige Dienstleistungen im Webbereich
-                spezialisiert hat. Neben verschiedenen Hostingleistungen bieten wir ebenfalls Softwareentwicklung,
-                Administrationssupport, Performanceoptimierung, technische Suchmaschienenoptimierung(SEO) und
-                Beratungsleistungen an.
+                {{ $t('home.paragraph_1') }}
             </p>
             <p class="mb-4 text-sm font-normal text-gray-500 lg:text-base sm:px-16 lg:px-48 dark:text-gray-400">
-                Wir glauben daran ein zentraler Partner zu sein. Entweder haben wir bereits Spezialisten für Sie im
-                Team, oder wir kümmern uns darum neue Spezialisten für Sie zu finden. Alles mit dem Ziel, dass Sie das
-                bestmögliche Ergebnis erhalten.
+                {{ $t('home.paragraph_2') }}
             </p>
             <p class="mb-4 text-sm font-normal text-gray-500 lg:text-base sm:px-16 lg:px-48 dark:text-gray-400">
-                Wir bemühen uns immer um faire Preise und glückliche Kunden, denn glückliche Kunden werben für
-                uns - nicht nur, weil es dafür einen kleinen Bonus gibt.
+                {{ $t('home.paragraph_3') }}
             </p>
             <p class="mb-4 text-sm font-normal text-gray-500 lg:text-base sm:px-16 lg:px-48 dark:text-gray-400">
-                Unsere detaillierte Abrechnung erfolgt über PayPal jeweils zu Anfang eines Monats, Sie haben also kein
-                Risiko, dass wir Ihr Geld einfach einbehalten.
+                {{ $t('home.paragraph_4') }}
             </p>
             <p class="mb-4 text-sm font-normal text-gray-500 lg:text-base sm:px-16 lg:px-48 dark:text-gray-400">
-                Haben Sie Fragen? Schicken Sie uns gerne eine Mail an service@bjoern-buettner.me, wir werden uns
-                schnellstmöglich zurückmelden.
+                {{ $t('home.paragraph_5') }}
             </p>
             <p class="mb-4 text-sm font-normal text-gray-500 lg:text-base sm:px-16 lg:px-48 dark:text-gray-400">
-                Wir freuen uns jetzt schon Ihre Probleme in Ihre Chancen zu verwandeln!
+                {{ $t('home.paragraph_6') }}
             </p>
             <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0">
                 <!-- @todo: Weiterleitung Leistungen -->

@@ -9,13 +9,16 @@
                     </Link>
                     <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
                         <li>
-                            <FooterLink href="#" text="Über uns"/>
+                            <FooterLink href="#" :text="$t('nav.about_us.about_us')" />
                         </li>
                         <li>
-                            <FooterLink href="#" text="Kundensupport"/>
+                            <FooterLink href="#" :text="$t('nav.contact.support')"/>
                         </li>
                         <li>
-                            <FooterLink href="#" text="Impressum"/>
+                            <FooterLink href="#" :text="$t('nav.imprint')"/>
+                        </li>
+                        <li>
+                            <FooterLink :href="route('app.login')" :text="$t('nav.login')"/>
                         </li>
                     </ul>
                 </div>
