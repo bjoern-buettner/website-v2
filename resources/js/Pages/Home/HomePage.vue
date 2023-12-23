@@ -44,9 +44,3 @@
 <script setup>
 import {Link} from '@inertiajs/vue3';
 </script>
-
-<script>
-export default {
-  name: 'IndexComponent',
-};
-</script>
