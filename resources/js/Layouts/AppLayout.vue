@@ -16,3 +16,11 @@
 import MainFooter from '../Components/Layout/MainFooter.vue';
 import MainHeader from '../Components/Layout/MainHeader.vue';
 </script>
+
+<script>
+export default {
+  mounted() {
+    this.$i18n.locale = this.$page.props.locale;
+  },
+};
+</script>
