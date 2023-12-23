@@ -1,6 +1,6 @@
+<!-- eslint-disable max-len -->
 <template>
     <div class="w-full bg-white sticky top-0 z-50 shadow-lg">
-    <!-- eslint-disable max-len -->
         <header class="max-w-screen-xl mx-auto flex flex-row">
             <nav class="w-full bg-white">
                 <div class="flex flex-wrap items-center justify-between max-w-screen-xl mx-auto p-4 w-full">
