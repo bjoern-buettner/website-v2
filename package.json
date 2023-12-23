@@ -19,6 +19,7 @@
         "@inertiajs/vue3": "^1.0.14",
         "@vitejs/plugin-vue": "^4.5.2",
         "flowbite": "^2.2.0",
-        "vue": "^3.3.12"
+        "vue": "^3.3.12",
+        "vue-i18n": "^9.8.0"
     }
 }
