@@ -1,9 +1,8 @@
 <?php
 
+use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\LocalizationController;
-use Illuminate\Support\Facades\App;
-use Illuminate\Support\Facades\Redirect;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -19,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', [HomeController::class, 'index'])->name('app.home');
 Route::post('/locale', [LocalizationController::class, 'store'])->name('app.locale');
+Route::get('/login', [AuthController::class, 'create'])->name('app.login.create');
+Route::post('/login', [AuthController::class, 'login'])->name('app.login.login');

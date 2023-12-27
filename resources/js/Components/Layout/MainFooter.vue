@@ -1,10 +1,10 @@
+<!-- eslint-disable max-len -->
 <template>
-    <!-- eslint-disable max-len -->
     <div class="w-full sticky top-[100vh] border-t-8 border-green-500">
         <footer class="bg-white">
             <div class="max-w-screen-xl mx-auto p-4 md:py-8">
                 <div class="sm:flex sm:items-center sm:justify-between">
-                    <Link :href="route('app.home')" class="flex items-center mb-4 sm:mb-0 space-x-3 rtl:space-x-reverse">
+                    <Link :href="route('app.home')" class="flex items-center mb-4 sm:mb-0 space-x-3">
                         <img src="/public/resources/assets/img/logo.png" alt="Bjoern-Buettner.me Logo">
                     </Link>
                     <ul class="flex flex-wrap items-center mb-6 text-sm font-medium text-gray-500 sm:mb-0">
@@ -18,7 +18,7 @@
                             <FooterLink href="#" :text="$t('nav.imprint')"/>
                         </li>
                         <li>
-                            <FooterLink :href="route('app.login')" :text="$t('nav.login')"/>
+                            <FooterLink :href="route('app.login.login')" :text="$t('nav.login')"/>
                         </li>
                     </ul>
                 </div>

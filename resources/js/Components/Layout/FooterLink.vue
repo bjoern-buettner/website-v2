@@ -1,5 +1,5 @@
+<!-- eslint-disable max-len -->
 <template>
-    <!-- eslint-disable max-len -->
     <Link :href="props.href"
           class="hover:underline hover:text-green-500 active:text-green-500 active:underline me-4 md:me-6"
     >
