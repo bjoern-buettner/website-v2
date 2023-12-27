@@ -17,8 +17,15 @@
                         <li>
                             <FooterLink href="#" :text="$t('nav.imprint')"/>
                         </li>
-                        <li>
-                            <FooterLink :href="route('app.login.login')" :text="$t('nav.login')"/>
+                        <li v-if="!$page.props.user">
+                            <FooterLink :href="route('app.auth.login')" :text="$t('nav.login')"/>
+                        </li>
+                        <li v-else>
+                            <FooterLink method="DELETE"
+                                        :href="route('app.auth.logout')"
+                                        :text="$t('nav.logout') + ' (' + $page.props.user.name +')'"
+                                        as="button"
+                            />
                         </li>
                     </ul>
                 </div>

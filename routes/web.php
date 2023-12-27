@@ -16,7 +16,10 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', [HomeController::class, 'index'])->name('app.home');
-Route::post('/locale', [LocalizationController::class, 'store'])->name('app.locale');
-Route::get('/login', [AuthController::class, 'create'])->name('app.login.create');
-Route::post('/login', [AuthController::class, 'login'])->name('app.login.login');
+Route::group(['middleware' => 'web'], function() {
+    Route::get('/', [HomeController::class, 'index'])->name('app.home');
+    Route::post('/locale', [LocalizationController::class, 'store'])->name('app.locale');
+    Route::get('/login', [AuthController::class, 'create'])->name('app.auth.create');
+    Route::post('/login', [AuthController::class, 'login'])->name('app.auth.login');
+    Route::delete('/login', [AuthController::class, 'logout'])->name('app.auth.logout');
+});
