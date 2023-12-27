@@ -16,7 +16,7 @@ class AuthController extends Controller
 {
     public function create(): Response
     {
-        return Inertia::render('Login/Create');
+        return Inertia::render('Auth/Login');
     }
 
     /**
@@ -50,13 +50,13 @@ class AuthController extends Controller
 
         $request->session()->regenerate();
 
-        return Redirect::back();
+        return Redirect::route('app.home');
     }
 
     public function logout(): RedirectResponse
     {
         Auth::logout();
 
-        return Redirect::back();
+        return Redirect::route('app.auth.login')->with('success', __('auth.logout'));
     }
 }

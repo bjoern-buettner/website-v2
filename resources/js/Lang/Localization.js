@@ -28,6 +28,7 @@ export default {
       },
       imprint: 'Impressum',
       login: 'Einloggen',
+      logout: 'Logout',
     },
     home: {
       headline: 'Willkommen bei unserem Unternehmen, dass sich auf erstklassige Dienstleistungen im Bereich Web spezialisiert hat.',
@@ -41,7 +42,7 @@ export default {
     login: {
       headline: 'In deinen Account einloggen',
       email: 'Deine E-Mail Adresse',
-      email_placeholder: 'name@company.de',
+      email_placeholder: 'name{\'@\'}company.de',
       password: 'Passwort',
       remember_me: 'Eingeloggt bleiben',
       forgot_password: 'Passwort vergessen?',
@@ -76,6 +77,7 @@ export default {
       },
       imprint: 'Imprint',
       login: 'Login',
+      logout: 'Logout',
     },
     home: {
       headline: 'Welcome to our company specializing in top-notch web services.',
@@ -89,7 +91,7 @@ export default {
     login: {
       headline: 'Sign in to your account',
       email: 'Your email',
-      email_placeholder: 'name@company.com',
+      email_placeholder: 'name{\'@\'}company.com',
       password: 'Password',
       remember_me: 'Remember me',
       forgot_password: 'Forgot password?',

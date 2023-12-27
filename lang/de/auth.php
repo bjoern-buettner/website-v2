@@ -14,6 +14,7 @@ return [
     */
 
     'failed' => 'Diese Angaben stimmen nicht mit unseren Daten überein.',
+    'logout' => 'Sie haben sich erfolgreich abgemeldet.',
     'password' => 'The provided password is incorrect.',
     'throttle' => 'Too many login attempts. Please try again in :seconds seconds.',
 
