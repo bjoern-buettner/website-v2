@@ -18,7 +18,7 @@
                             <FooterLink href="#" :text="$t('nav.imprint')"/>
                         </li>
                         <li>
-                            <FooterLink :href="route('app.login')" :text="$t('nav.login')"/>
+                            <FooterLink :href="route('app.login.login')" :text="$t('nav.login')"/>
                         </li>
                     </ul>
                 </div>

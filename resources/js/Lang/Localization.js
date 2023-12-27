@@ -38,6 +38,15 @@ export default {
       paragraph_5: 'Haben Sie Fragen oder benötigen Sie weitere Informationen? Zögern Sie nicht, uns zu kontaktieren.',
       paragraph_6: 'Wir freuen uns darauf, gemeinsam mit Ihnen Ihre Herausforderungen in Chancen zu verwandeln!',
     },
+    login: {
+      headline: 'In deinen Account einloggen',
+      email: 'Deine E-Mail Adresse',
+      email_placeholder: 'name@company.de',
+      password: 'Passwort',
+      remember_me: 'Eingeloggt bleiben',
+      forgot_password: 'Passwort vergessen?',
+      sign_in: 'Anmeldung',
+    },
   },
   en: {
     nav: {
@@ -76,6 +85,15 @@ export default {
       paragraph_4: 'Our transparent billing is done at the beginning of each month through PayPal, so you don\'t have to worry about the security of your money.',
       paragraph_5: 'Do you have questions or need further information? Don\'t hesitate to contact us.',
       paragraph_6: 'We look forward to working with you to turn your challenges into opportunities!',
+    },
+    login: {
+      headline: 'Sign in to your account',
+      email: 'Your email',
+      email_placeholder: 'name@company.com',
+      password: 'Password',
+      remember_me: 'Remember me',
+      forgot_password: 'Forgot password?',
+      sign_in: 'Sign In',
     },
   },
 };
