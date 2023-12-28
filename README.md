@@ -1,4 +1,5 @@
 <p align="center"><img src="public/resources/assets/img/logo.png"></p>
+
 ## Run local
 ### Install dependencies
 ```
