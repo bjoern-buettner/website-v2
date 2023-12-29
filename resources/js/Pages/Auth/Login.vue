@@ -7,12 +7,19 @@
                     <h1 class="text-xl font-bold leading-tight tracking-tight text-gray-900 lg:text-2xl">
                         {{ $t('login.headline') }}
                     </h1>
-                    <div v-if="flash" class="flex items-center p-4 mb-4 text-sm text-green-800 border border-green-300 rounded-lg bg-green-50 dark:bg-gray-800 dark:text-green-400 dark:border-green-800" role="alert">
-                        <svg class="flex-shrink-0 inline w-4 h-4 me-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                    <div v-if="loginForm.errors.generic" class="flex items-center p-4 mb-4 text-red-800 border-t-4 border-red-300 bg-red-50" role="alert">
+                        <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
-                        <span class="sr-only">Info</span>
-                        <div>
+                        <div class="ms-3 text-sm font-medium">
+                            {{loginForm.errors.generic}}
+                        </div>
+                    </div>
+                    <div v-if="flash" class="flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50" role="alert">
+                        <svg class="flex-shrink-0 w-4 h-4" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                            <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
+                        </svg>
+                        <div class="ms-3 text-sm font-medium">
                             {{ flash }}
                         </div>
                     </div>
@@ -59,10 +66,6 @@
                             <a href="#" class="text-sm font-medium text-green-500 hover:underline mt-5 lg:mt-0">
                                 {{ $t('login.forgot_password') }}
                             </a>
-                        </div>
-                        <div v-if="loginForm.errors.generic"
-                             class="w-full mt-5 text-red-600 text-sm">
-                            {{loginForm.errors.generic}}
                         </div>
                         <button type="submit"
                                 class="w-full text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
