@@ -12,7 +12,7 @@
                             <path d="M10 .5a9.5 9.5 0 1 0 9.5 9.5A9.51 9.51 0 0 0 10 .5ZM9.5 4a1.5 1.5 0 1 1 0 3 1.5 1.5 0 0 1 0-3ZM12 15H8a1 1 0 0 1 0-2h1v-3H8a1 1 0 0 1 0-2h2a1 1 0 0 1 1 1v4h1a1 1 0 0 1 0 2Z"/>
                         </svg>
                         <div class="ms-3 text-sm font-medium">
-                            {{loginForm.errors.generic}}
+                            {{ loginForm.errors.generic }}
                         </div>
                     </div>
                     <div v-if="flash" class="flex items-center p-4 mb-4 text-green-800 border-t-4 border-green-300 bg-green-50" role="alert">
@@ -63,9 +63,9 @@
                                     </label>
                                 </div>
                             </div>
-                            <a href="#" class="text-sm font-medium text-green-500 hover:underline mt-5 lg:mt-0">
+                            <Link :href="route('password.request')" class="text-sm font-medium text-green-500 hover:underline mt-5 lg:mt-0">
                                 {{ $t('login.forgot_password') }}
-                            </a>
+                            </Link>
                         </div>
                         <button type="submit"
                                 class="w-full text-white bg-green-500 hover:bg-green-600 focus:ring-4 focus:outline-none focus:ring-primary-300 font-medium rounded-lg text-sm px-5 py-2.5 text-center">
@@ -79,7 +79,7 @@
 </template>
 
 <script setup>
-import {useForm, usePage} from '@inertiajs/vue3';
+import {useForm, usePage, Link} from '@inertiajs/vue3';
 import {computed} from 'vue';
 const page = usePage();
 const flash = computed(() => page.props.flash.success);
