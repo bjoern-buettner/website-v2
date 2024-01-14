@@ -48,6 +48,21 @@ export default {
       forgot_password: 'Passwort vergessen?',
       sign_in: 'Anmeldung',
     },
+    forgot_password: {
+      headline: 'Passwort vergessen',
+      description: 'Um dein Passwort wiederherzustellen gib deine E-Mail Adresse an und klicke auf den Link in der E-Mail die wir dir zusenden.',
+      email: 'Deine E-Mail Adresse',
+      email_placeholder: 'name{\'@\'}company.de',
+      send_link: 'Wiederherstellungslink anfordern',
+    },
+    reset_password: {
+      headline: 'Password ändern',
+      newPassword: 'Neues Passwort',
+      newPasswordConfirm: 'Neues Passwort wiederholen',
+      passwordsDoNotMatch: 'Die eingegebenen Passwörter stimmen nicht überein.',
+      passwordNotHasMinimumLength: 'Das Passwort muss mindestens 8 Zeichen enthalten',
+      change_password: 'Passwort ändern',
+    },
   },
   en: {
     nav: {
@@ -96,6 +111,21 @@ export default {
       remember_me: 'Remember me',
       forgot_password: 'Forgot password?',
       sign_in: 'Sign In',
+    },
+    forgot_password: {
+      headline: 'Forgot password',
+      description: 'To recover your password, enter your e-mail address and click on the link in the e-mail we send you.',
+      email: 'Your email',
+      email_placeholder: 'name{\'@\'}company.com',
+      send_link: 'Request recovery link',
+    },
+    reset_password: {
+      headline: 'Change password',
+      newPassword: 'New password',
+      newPasswordConfirm: 'Repeat new password',
+      passwordsDoNotMatch: 'The passwords entered do not match.',
+      passwordNotHasMinimumLength: 'The password must contain at least 8 characters',
+      change_password: 'Change password',
     },
   },
 };

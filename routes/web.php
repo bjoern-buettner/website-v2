@@ -22,4 +22,11 @@ Route::group(['middleware' => 'web'], function() {
     Route::get('/login', [AuthController::class, 'create'])->name('app.auth.create');
     Route::post('/login', [AuthController::class, 'login'])->name('app.auth.login');
     Route::delete('/login', [AuthController::class, 'logout'])->name('app.auth.logout');
+    Route::get('/request-reset-password-link', [AuthController::class, 'requestResetPasswordLink']);
+    Route::get('/forgot-password', [AuthController::class, 'forgotPassword'])->name('password.request');
+    Route::post('/forgot-password', [AuthController::class, 'forgotPasswordSubmit'])
+        ->name('password.request.submit');
+    Route::get('/reset-password', [AuthController::class, 'resetPassword'])->name('password.reset');
+    Route::post('/reset-password', [AuthController::class, 'resetPasswordSubmit'])
+        ->name('password.reset.submit');
 });
