@@ -156,31 +156,37 @@
                                     <div class="p-4 text-gray-900">
                                         <ul class="space-y-4" aria-labelledby="mega-menu-icons-dropdown-button">
                                             <li>
-                                                <Link href="#" class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
+                                                <a href="https://www.google.com/maps/place/Bj%C3%B6rn+B%C3%BCttner/@51.4168451,6.8539511,15z/data=!4m8!3m7!1s0x47b8c181aa157c71:0xd4a0e7a32e47292e!8m2!3d51.4168451!4d6.8539511!9m1!1b1!16s%2Fg%2F11v17jpq5g"
+                                                   target="_blank"
+                                                   class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
                                                     <span class="sr-only">Bewertungen</span>
                                                     <svg class="w-3 h-3 me-2 text-gray-400 group-hover:text-green-500 group-active:text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 16">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1v14h16M4 10l3-4 4 4 5-5m0 0h-3.207M16 5v3.207"/>
                                                     </svg>
                                                     {{ $t('nav.social.reviews') }}
-                                                </Link>
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link href="#" class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
+                                                <a href="https://github.com/bjoern-buettner"
+                                                   target="_blank"
+                                                   class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
                                                     <span class="sr-only">GitHub</span>
                                                     <svg class="w-3 h-3 me-2 text-gray-400 group-hover:text-green-500 group-active:text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 22">
                                                         <path d="M15.458 4a3 3 0 1 0-4.478 2.6A2.6 2.6 0 0 1 8.4 9H6.6a4.57 4.57 0 0 0-2.6.814v-3a3 3 0 1 0-2 0v8.368a3 3 0 1 0 2 0V13.6A2.607 2.607 0 0 1 6.6 11h1.8a4.6 4.6 0 0 0 4.548-4.049A3 3 0 0 0 15.458 4Z"/>
                                                     </svg>
                                                     {{ $t('nav.social.github') }}
-                                                </Link>
+                                                </a>
                                             </li>
                                             <li>
-                                                <Link href="#" class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
+                                                <a href="https://www.linkedin.com/company/bjoern-buettner/"
+                                                   target="_blank"
+                                                   class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
                                                     <span class="sr-only">LinkedIn</span>
                                                     <svg class="w-3 h-3 me-2 text-gray-400 group-hover:text-green-500 group-active:text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 19 19">
                                                         <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M11.013 7.962a3.519 3.519 0 0 0-4.975 0l-3.554 3.554a3.518 3.518 0 0 0 4.975 4.975l.461-.46m-.461-4.515a3.518 3.518 0 0 0 4.975 0l3.553-3.554a3.518 3.518 0 0 0-4.974-4.975L10.3 3.7"/>
                                                     </svg>
                                                     {{ $t('nav.social.linkedin') }}
-                                                </Link>
+                                                </a>
                                             </li>
                                         </ul>
                                     </div>
