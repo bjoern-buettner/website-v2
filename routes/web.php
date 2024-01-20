@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\AuthController;
 use App\Http\Controllers\HomeController;
+use App\Http\Controllers\ImprintController;
 use App\Http\Controllers\LocalizationController;
 use Illuminate\Support\Facades\Route;
 
@@ -29,4 +30,5 @@ Route::group(['middleware' => 'web'], function() {
     Route::get('/reset-password', [AuthController::class, 'resetPassword'])->name('password.reset');
     Route::post('/reset-password', [AuthController::class, 'resetPasswordSubmit'])
         ->name('password.reset.submit');
+    Route::get('/imprint', [ImprintController::class, 'index'])->name('imprint');
 });
