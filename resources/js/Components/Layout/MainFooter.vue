@@ -12,7 +12,10 @@
                             <FooterLink href="#" :text="$t('nav.about_us.about_us')" />
                         </li>
                         <li>
-                            <FooterLink href="#" :text="$t('nav.contact.support')"/>
+                            <a class="link"
+                               href="mailto:support@bjoern-buettner.me">
+                                {{ $t('nav.contact.support') }}
+                            </a>
                         </li>
                         <li>
                             <FooterLink :href="route('imprint')" :text="$t('nav.imprint')"/>
