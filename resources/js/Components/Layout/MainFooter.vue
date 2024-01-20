@@ -15,7 +15,7 @@
                             <FooterLink href="#" :text="$t('nav.contact.support')"/>
                         </li>
                         <li>
-                            <FooterLink href="#" :text="$t('nav.imprint')"/>
+                            <FooterLink :href="route('imprint')" :text="$t('nav.imprint')"/>
                         </li>
                         <li v-if="!$page.props.user">
                             <FooterLink :href="route('app.auth.login')" :text="$t('nav.login')"/>

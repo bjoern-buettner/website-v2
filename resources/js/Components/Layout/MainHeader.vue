@@ -187,7 +187,7 @@
                                 </div>
                             </li>
                             <li>
-                                <Link href="#" class="block py-2 px-3 border-b border-gray-100 hover:bg-green-50 active:bg-green-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0" aria-current="page">{{ $t('nav.imprint') }}</Link>
+                                <Link :href="route('imprint')" class="block py-2 px-3 border-b border-gray-100 hover:bg-green-50 active:bg-green-50 lg:hover:bg-transparent lg:border-0 lg:hover:text-green-500 lg:p-0" aria-current="page">{{ $t('nav.imprint') }}</Link>
                             </li>
                         </ul>
                     </div>
