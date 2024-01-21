@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\ImprintController;
 use App\Http\Controllers\LocalizationController;
@@ -31,4 +32,5 @@ Route::group(['middleware' => 'web'], function() {
     Route::post('/reset-password', [AuthController::class, 'resetPasswordSubmit'])
         ->name('password.reset.submit');
     Route::get('/imprint', [ImprintController::class, 'index'])->name('imprint');
+    Route::resource('blog', BlogController::class);
 });
