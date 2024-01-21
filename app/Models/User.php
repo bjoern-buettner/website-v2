@@ -12,6 +12,7 @@ use Laravel\Sanctum\HasApiTokens;
 /**
  * @property string $name
  * @property string $email
+ * @property bool $is_admin
  */
 class User extends Authenticatable implements CanResetPassword
 {
@@ -46,5 +47,6 @@ class User extends Authenticatable implements CanResetPassword
     protected $casts = [
         'email_verified_at' => 'datetime',
         'password' => 'hashed',
+        'is_admin' => 'boolean'
     ];
 }

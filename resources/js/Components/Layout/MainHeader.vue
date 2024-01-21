@@ -50,7 +50,7 @@
                                                 </Link>
                                             </li>
                                             <li>
-                                                <Link href="#" class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
+                                                <Link :href="route('blog.index')" class="flex items-center text-gray-500 hover:text-green-500 active:text-green-500 group">
                                                     <span class="sr-only">{{ $t('nav.services.blog') }}</span>
                                                     <svg class="w-3 h-3 me-2 text-gray-400 group-hover:text-green-500 group-active:text-green-500" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 20">
                                                         <path d="M16 14V2a2 2 0 0 0-2-2H2a2 2 0 0 0-2 2v15a3 3 0 0 0 3 3h12a1 1 0 0 0 0-2h-1v-2a2 2 0 0 0 2-2ZM4 2h2v12H4V2Zm8 16H3a1 1 0 0 1 0-2h9v2Z"/>
